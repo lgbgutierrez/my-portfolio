@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [ "I'm currently working as a Pod Leader.", "I use design tools such as XD everyday.", "My allies are html, css/sass and javascript.", "I'm currently learning React.", "I'm a Front-End Web Developer."];
+    var dataText = [ "I'm currently working as a Pod Leader.", "I use design tools such as XD everyday.", "My allies are html, css/sass and javascript.", "I'm interested in learning frameworks such as React.", "I'm a Front-End Web Developer."];
     
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
