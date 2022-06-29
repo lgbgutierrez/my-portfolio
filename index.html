@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Front-End Web Development | Leslie's Portfolio</title>
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Ramabhadra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <!-- HEADER -->
+        <header id="scroll-up">
+            <nav class="grid">
+                <div>
+                    <a href="/" class="logo"><span>LGB</span><span>GUTIERREZ</span></a>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#about-me">About me</a></li>
+                        <li class="menu__item"><a href="#my-experience">My experience</a></li>
+                        <li class="menu__item"><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER -->
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="grid">
+                <h3 class="accent__text">Hello, my name is <span>LESLIE GUTIERREZ BARAJAS</span></h3>
+                <h1 class="section__title">PORTFOLIO</h1>
+                <h2 class="section__subtitle text__animation"></h2>
+                <a href="#about-me"><button class="blue">Get started</button></a>
+            </div>
+        </section>
+        <!-- END HERO SECTION -->
+        <!-- ABOUT ME SECTION -->
+        <section id="about-me">
+            <div class="grid">
+                <div class="columns__big">
+                    <div class="image">
+                        <img src="img/me.jpg"></img>
+                    </div>
+                    <div class="information">
+                        <h2 class="section__title">About me</h2>
+                        <p>I currently work as a Pod Leader of a team made up of jr/sr developers and designers.
+                            I manage, assign and monitor web projects, such as:</p>
+                            <ul>
+                                <li>Web development/maintenance</li>
+                                <li>Optimizations</li>
+                                <li>Graphic & Web design</li>
+                                <li>A/B testing</li>
+                            </ul>
+                        <p>I have the necessary skills to work both as part of a team and to lead it.
+                            I like to keep my mind focused on solving the task at hand,
+                            being an effective element in my team when it comes to solving problems.
+                            I find it easy to handle multiple projects throughout the day and can prioritize as needed.
+                            I give importance to the details that can make a difference, always considering the needs of the client and delivery times.</p>
+                        <p>Really looking forward to deepen my knowledge in the UX field :)</p>
+                        <hr/>
+                        <h3 class="section__subtitle">Personal information</h3>
+                        <div class="columns__small">
+                            <div>
+                                <p>Name: <strong>Leslie Gutierrez Barajas</strong></p>
+                                <p>Age: <strong>25 years</strong></p>
+                                <p>Nationality: <strong>Mexican</strong></p>
+                            </div>
+                            <div>
+                                <p>Residence: <a href="https://goo.gl/maps/SRV9rvdnJgeEspBB7" target="_blank"><strong>Tijuana, Baja California</strong></a></p>
+                                <p>Phone: <a href="tel:+526641982246"><strong>+52 (664) 1982246</strong></a></p>
+                                <p>Email: <a href="mailto:lgbgutierrez@gmail.com" target="_blank"><strong>lgbgutierrez@gmail.com</strong></a></p>                           
+                            </div>
+                        </div>
+                        <a href="/pdf/CV.pdf" target="_blank"><button class="blue">Download CV</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT ME SECTION -->
+        <!-- MY EXPERIENCE SECTION -->
+        <section id="my-experience">
+            <div class="grid">
+                <h2 class="section__title">My experience</h2>
+                <div class="tabs">
+                    <a class="tab__experience-link accent__text active" onclick="openExperience(event, 'experience-tab1')">Education</a>
+                    <a class="tab__experience-link accent__text" onclick="openExperience(event, 'experience-tab2')">Skills</a>
+                    <a class="tab__experience-link accent__text" onclick="openExperience(event, 'experience-tab3')">Experience</a>
+                </div>
+                <div id="experience-tab1" class="tab__experience-content" style="display: block;">
+                    <div class="columns__small">
+                        <div class="card education">
+                            <h3 class="card__title">Education</h3>
+                            <p class="year">2015 - 2020</p>
+                            <p class="degree">Computer Engineering - Bachelor's</p>
+                            <p class="institution">Universidad Autónoma de Baja California<br/>(Autonomous University of Baja California)</p>
+                            <hr/>
+                            <p class="year">2011 - 2014</p>
+                            <p class="degree">Graphic Design - Associate</p>
+                            <p class="institution">Preparatoria Federal Lázaro Cárdenas<br/>(Federal High School Lázaro Cárdenas)</p>
+                        </div>
+                        <div class="card education">
+                            <h3 class="card__title">Languages</h3>
+                            <div class="language">
+                                <h4>Spanish <span class="percentage">(Native)</span></h4>
+                                <div class="bar">
+                                    <hr width="100%"/>
+                                </div>                               
+                            </div>
+                            <div class="language">
+                                <h4>English <span class="percentage">80%</span></h4>
+                                <div class="bar">
+                                    <hr width="80%"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="experience-tab2" class="tab__experience-content">
+                    <div class="columns__small">
+                        <div class="card skills">
+                            <p class="card__icon"><i class="fa-solid fa-code"></i></p>
+                            <h3 class="card__title">Development</h3>                            
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS & Sass & Less</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                        <div class="card skills">
+                            <p class="card__icon"><i class="fa-solid fa-bezier-curve"></i></p>
+                            <h3 class="card__title">Design</h3>                            
+                            <ul>
+                                <li>XD</li>
+                                <li>Figma</li>
+                                <li>Ai</li>
+                                <li>Ps</li>
+                            </ul>
+                        </div>
+                        <div class="card skills">
+                            <p class="card__icon"><i class="fa-solid fa-lightbulb"></i></p>
+                            <h3 class="card__title">Other</h3>                            
+                            <ul>
+                                <li>Respect</li>
+                                <li>Time management</li>
+                                <li>Teamwork</li>
+                                <li>Work ethic</li>
+                                <li>Problem-solving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="experience-tab3" class="tab__experience-content">
+                    <div class="columns__small">
+                        <div class="card experience">
+                            <h3 class="card__title">Dude Agency</h3>
+                            <p class="year">May 2021 - Current</p>
+                            <p class="position">Pod Leader</p>
+                            <p class="description">Leader of a Pod.
+                                Management and review of web development projects.
+                                Maintaining constant communication with clients to solve doubts and always be in tune with their needs.
+                                These projects could be worked on different platforms, depending on the client's needs.
+                                The most used are WordPress for web and XD for design.</p>
+                            <hr/>
+                            <p class="year">January 2021 - May 2021</p>
+                            <p class="position">Junior Web Developer</p>
+                            <p class="description">Member part of a Pod.
+                                In charge of a wide variety of projects per day, since we offer outsourcing.
+                                Maintenance, development, hosting, optimization of websites or implementation of elements in existing sites such as pop-ups or forms, among other tasks.</p>
+                        </div>
+                        <div class="card experience">
+                            <h3 class="card__title">Studio Arsa</h3>
+                            <p class="year">March 2020 - November 2020</p>
+                            <p class="position">Head Of The Web Development Team</p>
+                            <p class="description">Management of web projects, as well as being in constant communication with the web design team to improve the UX.
+                                I still did website maintenance and development, but now it involved tracking ad campaigns and following up on SEO audits, as well as optimizations every month.
+                                Plus technical support for hostings and domains.
+                                I wasn't the one in communication with clients, but I did have to make video tutorials if they needed help with anything related to the work we did for them.</p>
+                            <hr/>
+                            <p class="year">January 2020 - March 2020</p>
+                            <p class="position">WordPress Developer</p>
+                            <p class="description">Development and maintenance of WordPress websites and e-commerce (mostly WooCommerce and Shopify).
+                                If changes needed to be done to the graphics or icons used in the design mockups, I had to take care of it.
+                                I was also in charge of hosting the websites, either on our server or the client's server.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END MY EXPERIENCE SECTION -->
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div class="grid">
+                <h2 class="section__title">Projects</h2>
+                <div class="tabs">
+                    <a class="tab__projects-link accent__text active" onclick="openProjects(event, 'projects-tab1')">Development</a>
+                    <a class="tab__projects-link accent__text" onclick="openProjects(event, 'projects-tab2')">Design</a>
+                </div>
+                <div id="projects-tab1" class="tab__projects-content" style="display: block;">
+                    <div class="columns__small">
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://wordpress-243397-2493048.cloudwaysapps.com/" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/wordpress_custom-template.jpg" alt="Wordpress Custom Template Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://wordpress-243397-2493048.cloudwaysapps.com/" target="_blank">Wordpress:<br/><span>Custom Template,<br/>Advanced Custom Fields</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://www.bradleyco.com/" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/wordpress_elementor.jpg" alt="Wordpress Elementor Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://www.bradleyco.com/" target="_blank">Wordpress:<br/><span>Elementor</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://adamlevin.webflow.io/" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/webflow_template-client.jpg" alt="Webflow Template from Client">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://adamlevin.webflow.io/" target="_blank">Webflow:<br/><span>Template from Client</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://www.immigrantshaverights.com/home" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/clickfunnels_ab-testing.jpg" alt="ClickFunnels A/B Testing Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://www.immigrantshaverights.com/home" target="_blank">ClickFunnels:<br/><span>A/B Testing</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects-tab2" class="tab__projects-content">
+                    <div class="columns__small">
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://xd.adobe.com/view/da4f7e19-6673-4d11-979d-99d02607f8a0-8f1c/grid" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/xd_homepage-blog.jpg" alt="XD Adobe Homepage & Blog Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://xd.adobe.com/view/da4f7e19-6673-4d11-979d-99d02607f8a0-8f1c/grid" target="_blank">XD Adobe:<br/><span>Homepage & Blog</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://xd.adobe.com/view/d01c4cee-c356-48e8-b230-2a25a28bcf30-854f/grid" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/xd_food-industry-template.jpg" alt="XD Adobe Food Industry Template Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://xd.adobe.com/view/d01c4cee-c356-48e8-b230-2a25a28bcf30-854f/grid" target="_blank">XD Adobe:<br/><span>Food Industry Template</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://www.figma.com/file/hFd320HAzN7LK7YxHikGSc/E-commerce" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/figma_style-tile.jpg" alt="Figma Style Tile Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://www.figma.com/file/hFd320HAzN7LK7YxHikGSc/E-commerce" target="_blank">Figma:<br/><span>Style Tile</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="projects__image">
+                                <a href="https://www.figma.com/file/F13ZcD6hUQXgW6mj3nZWGa/Mextli" target="_blank">
+                                    <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                    <img src="img/projects/figma_mobile-app.jpg" alt="Figma Mobile App Project">
+                                </a>
+                            </div>
+                            <div class="projects__text">
+                                <a href="https://www.figma.com/file/F13ZcD6hUQXgW6mj3nZWGa/Mextli" target="_blank">Figma:<br/><span>Mobile App</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PROJECTS SECTION -->
+        <!-- PLATFORMS SECTION -->
+        <section id="platforms">
+            <div class="grid">
+                <h3 class="section__subtitle">I've worked on these</h3>
+                <h2 class="section__title">Platforms</h2>
+                <div class="columns__big">
+                    <div>
+                        <a href="https://wordpress.com/" target="_blank"><img class="platforms__logo" src="img/platforms/wordpress.png" alt="Wordpress"></a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/" target="_blank"><img class="platforms__logo" src="img/platforms/github.png" alt="Github"></a>                 
+                    </div>
+                    <div>
+                        <a href="https://webflow.com/" target="_blank"><img class="platforms__logo" src="img/platforms/webflow.png" alt="Webflow"></a>             
+                    </div>
+                    <div>
+                        <a href="https://www.gohighlevel.com/" target="_blank"><img class="platforms__logo" src="img/platforms/highlevel.png" alt="HighLevel"></a>         
+                    </div>
+                    <div>
+                        <a href="https://www.shopify.com/" target="_blank"><img class="platforms__logo" src="img/platforms/shopify.png" alt="Shopify"></a>                    
+                    </div>
+                </div>
+                <div class="columns__big">
+                    <div>
+                        <a href="https://vwo.com/" target="_blank"><img class="platforms__logo" src="img/platforms/vwo.png" alt="VWO"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.clickfunnels.com/" target="_blank"><img class="platforms__logo" src="img/platforms/clickfunnels.png" alt="Clickfunnels"></a>                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PLATFORMS SECTION -->
+        <!-- SCRIPTS -->
+        <script src="js/textAnimation.js"></script>
+        <script src="js/toggle.js"></script>
+        <!-- END CRIPTS -->
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <p><a href="#scroll-up" class="logo"><span>LGB</span><span>GUTIERREZ</span></a> <span class="pipeline">|</span> <a href="mailto:lgbgutierrez@gmail.com" class="email">lgbgutierrez@gmail.com</a> <span class="pipeline">|</span> <span class="year"><strong>©2022</strong></span></p>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>
