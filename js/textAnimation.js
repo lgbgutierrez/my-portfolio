@@ -1,31 +1,47 @@
-document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [ "I'm currently working as a Pod Leader.", "I use design tools such as XD everyday.", "My allies are html, css/sass and javascript.", "I'm interested in learning frameworks such as React.", "I'm a Front-End Web Developer."];
-    
-    function typeWriter(text, i, fnCallback) {
-      if (i < (text.length)) {
-       document.querySelector("h2").innerHTML = text.substring(0, i+1) + '<span></span>';
-  
-        setTimeout(function() {
-          typeWriter(text, i + 1, fnCallback)
-        }, 100);
-      }
-      else if (typeof fnCallback == 'function') {
-        setTimeout(fnCallback, 700);
-      }
+const textDisplay = document.querySelector(".text__animation")
+const phrases = ["I'm currently working as a Pod Leader. ", "I use design tools such as XD everyday. ", "My allies are html, css/sass and javascript. ", "I'm currently learning React. ", "I'm a Front-End Web Developer. "]
+let i = 0
+let j = 0 
+let currentPhrase = []
+let isDeleting = false
+let isEnd = false
+
+function loop () {
+  isEnd = false
+  textDisplay.innerHTML = currentPhrase.join('')
+
+  if (i < phrases.length) {
+
+    if (!isDeleting && j <= phrases[i].length) {
+      currentPhrase.push(phrases[i][j])
+      j++
+      textDisplay.innerHTML = currentPhrase.join('')
     }
 
-     function StartTextAnimation(i) {
-       if (typeof dataText[i] == 'undefined'){
-          setTimeout(function() {
-            StartTextAnimation(0);
-          }, 20000);
-       }
+    if(isDeleting && j <= phrases[i].length) {
+      currentPhrase.pop(phrases[i][j])
+      j--
+      textDisplay.innerHTML = currentPhrase.join('')
+    }
 
-      if (i < dataText[i].length) {
-       typeWriter(dataText[i], 0, function(){
-         StartTextAnimation(i + 1);
-       });
+    if (j == phrases[i].length) {
+      isEnd = true
+      isDeleting = true
+    }
+
+    if (isDeleting && j === 0) {
+      currentPhrase = []
+      isDeleting = false
+      i++
+      if (i === phrases.length) {
+        i = 0
       }
     }
-    StartTextAnimation(0);
-  });
+  }
+  const spedUp = Math.random() * (80 -50) + 50
+  const normalSpeed = Math.random() * (300 -200) + 200
+  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
+  setTimeout(loop, time)
+}
+
+loop()
