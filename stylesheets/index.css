@@ -120,19 +120,19 @@ button {
   font-weight: bold;
 }
 button.blue {
-  background: #7493cc;
+  background: #5a89b9;
   color: white;
 }
 button.blue:hover {
   background: white;
-  color: #7493cc;
+  color: #5a89b9;
 }
 button.white {
   background: white;
-  color: #7493cc;
+  color: #5a89b9;
 }
 button.white:hover {
-  background: #7493cc;
+  background: #5a89b9;
   color: white;
 }
 
@@ -280,7 +280,7 @@ ul.menu .menu__item a {
   letter-spacing: 1px;
 }
 ul.menu .menu__item a:hover {
-  color: #7493cc;
+  color: #5a89b9;
 }
 
 /* HERO */
@@ -361,7 +361,7 @@ section#about-me div.image, section#about-me div.information {
 
 /* MY EXPERIENCE */
 section#my-experience {
-  background-color: #7493cc;
+  background-color: #5a89b9;
 }
 section#my-experience hr {
   margin: 25px 0;
@@ -405,7 +405,7 @@ section#my-experience .education .language .bar {
 }
 section#my-experience .education .language .bar hr {
   display: inline-block;
-  border: 8px solid #0095ff;
+  border: 8px solid #5a89b9;
   margin: 0;
 }
 section#my-experience .education .language .bar p {

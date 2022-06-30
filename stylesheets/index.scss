@@ -7,7 +7,7 @@ $primary-color: white;
 $secondary-color: #1a1e26;
 $dark-color: #282828;
 $light-color: #f9f9fb;
-$accent-color: #7493cc;
+$accent-color: #5a89b9;
 $primary-size: 7rem;
 $secondary-size: 50px;
 $accent-size: 1.3rem;
@@ -381,7 +381,7 @@ section#my-experience {
 
                 hr {
                     display: inline-block;
-                    border: 8px solid #0095ff;
+                    border: 8px solid $accent-color;
                     margin: 0;
                 }
                 p {
