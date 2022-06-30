@@ -120,19 +120,19 @@ button {
   font-weight: bold;
 }
 button.blue {
-  background: #0095ff;
+  background: #7493cc;
   color: white;
 }
 button.blue:hover {
   background: white;
-  color: #0095ff;
+  color: #7493cc;
 }
 button.white {
   background: white;
-  color: #0095ff;
+  color: #7493cc;
 }
 button.white:hover {
-  background: #0095ff;
+  background: #7493cc;
   color: white;
 }
 
@@ -280,7 +280,7 @@ ul.menu .menu__item a {
   letter-spacing: 1px;
 }
 ul.menu .menu__item a:hover {
-  color: #0095ff;
+  color: #7493cc;
 }
 
 /* HERO */
@@ -361,7 +361,7 @@ section#about-me div.image, section#about-me div.information {
 
 /* MY EXPERIENCE */
 section#my-experience {
-  background-color: #0095ff;
+  background-color: #7493cc;
 }
 section#my-experience hr {
   margin: 25px 0;
