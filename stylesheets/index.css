@@ -1,9 +1,5 @@
 @import "/fontawesome/css/all.css";
 @import "/fontawesome/css/solid.css";
-.daccord_b {
-  display: block;
-}
-
 body {
   font-family: "Questrial", sans-serif;
   font-size: 1rem;
@@ -303,16 +299,26 @@ section#hero .section__title {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-section#hero .section__subtitle {
+section#hero .section__subtitle,
+section#hero .text__animation {
   color: white;
   font-size: 1.5rem;
   font-weight: normal;
   text-align: right;
   margin-bottom: 0;
 }
-section#hero .section__subtitle span {
-  border-right: 0.05em solid;
-  animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
+section#hero h2.text__animation {
+  border-right: 2px solid white;
+  animation: blinking 1800ms infinite;
+  height: 25px;
+}
+@keyframes blinking {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
 }
 section#hero h3, section#hero h4, section#hero .accent__text {
   color: white;
@@ -547,6 +553,10 @@ footer .pipeline {
   section#hero button {
     margin-top: 20px !important;
   }
+  section#hero h2.text__animation {
+    width: fit-content;
+    margin: 0 auto;
+  }
 
   section#about-me button {
     margin-top: 30px;
@@ -661,6 +671,10 @@ section#projects div.columns__small .card {
     display: block;
     padding: 0;
     line-height: 2em;
+  }
+  section#hero h2.text__animation {
+    margin-top: 10px;
+    height: 16px;
   }
 
   section#about-me div.columns__small {

@@ -14,11 +14,6 @@ $accent-size: 1.3rem;
 $body-size: 1rem;
 $grid-container: 1080px;
 
-
-.daccord_b {
-    display: block;
-}
-
 body {
     font-family: $secondary-font;
     font-size: $body-size;
@@ -280,17 +275,22 @@ section#hero {
         text-transform: uppercase;
         margin-bottom: 0;
     }
-    .section__subtitle {
+    .section__subtitle,
+    .text__animation {
         color: $primary-color;
         font-size: 1.5rem;
         font-weight: normal;
         text-align: right;
         margin-bottom: 0;
-
-        span {
-            border-right: 0.05em solid;
-            animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
-        }
+    }
+    h2.text__animation {
+        border-right: 2px solid $primary-color;
+        animation: blinking 1800ms infinite;
+        height: 25px;
+    }
+    @keyframes blinking {
+        0% {border-color: $primary-color;}
+        50% {border-color: transparent;}
     }
     h3, h4, .accent__text {
         color:$primary-color;
@@ -506,6 +506,10 @@ footer {
         .section__title {line-height: 1.2em;}
         .accent__text, .section__subtitle {text-align: center;}
         button {margin-top: 20px !important;}
+        h2.text__animation {
+            width: fit-content;
+            margin: 0 auto;
+        }
     }
     section#about-me {
         button {margin-top: 30px;}
@@ -586,6 +590,10 @@ footer {
                 padding: 0;
                 line-height: 2em;
             }
+        }
+        h2.text__animation {
+            margin-top: 10px;
+            height: 16px;
         }
     }
     section#about-me {
